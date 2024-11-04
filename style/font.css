@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Vazirmatn Thin";
+  src: url(../font/Vazirmatn-Thin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Vazirmatn Light";
+  src: url(../font/Vazirmatn-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Vazirmatn Regular";
+  src: url(../font/Vazirmatn-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Vazirmatn Medium";
+  src: url(../font/Vazirmatn-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Vazirmatn Semibold";
+  src: url(../font/Vazirmatn-SemiBold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Vazirmatn Bold";
+  src: url(../font/Vazirmatn-Bold.woff2);
+}

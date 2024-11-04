@@ -1,0 +1,164 @@
+@import url(./reset.css);
+@import url(./font.css);
+
+/* ===> VARIABLE <=== */
+:root {
+  --primary-color: #234894;
+  --secondary-color: #afcedd;
+  --title-color: #1e1e1e;
+  --subtitle-color: #696969;
+  --button-bg-color: #219f95;
+  --button-hover-color: #51908b;
+  --background-color: #ffffff;
+  --border-radius-small: 6px;
+  --border-radius-middle: 8px;
+}
+
+/* ===> COMPONENT <=== */
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Vazirmatn Medium";
+}
+
+/* ===> BASE <=== */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Vazirmatn Regular", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* ===> APP <=== */
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* ===> REQUEST SECTION <=== */
+.request {
+  margin-top: 5rem;
+}
+.section-title {
+  font-family: "Vazirmatn Bold";
+  font-size: 2.2rem;
+  color: var(--title-color);
+  text-align: right;
+}
+.request-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.request-item {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+.request-item__header,
+.request-item__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.request-item__header-right,
+.request-item__user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.request-item__number,
+.request-item__category {
+  color: var(--primary-color);
+  font-family: "Vazirmatn Semibold";
+}
+.request-item__number {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-small);
+}
+.request-item__date,
+.request-item__id {
+  color: var(--subtitle-color);
+  font-size: 1.2rem;
+}
+.request-item__subject {
+  color: var(--title-color);
+  font-family: "Vazirmatn Bold";
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.request-item__id,
+.request-item__footer {
+  margin-bottom: 1rem;
+}
+.request-item__name {
+  color: var(--title-color);
+  font-family: "Vazirmatn Semibold";
+}
+.button--primary {
+  color: var(--background-color);
+  background-color: var(--button-bg-color);
+  border-radius: var(--border-radius-middle);
+  padding: 2rem 2.2rem;
+  transition: all 0.2s ease;
+}
+.button--primary:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* ===> MEDIA QUERY <=== */
+
+@media (min-width: 576px) {
+  .container {
+    width: 54rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 72rem;
+  }
+  .request-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .request-item__date,
+  .request-item__id {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 96rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 114rem;
+  }
+  .request-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 137rem;
+  }
+}
